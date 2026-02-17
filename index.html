@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Source Consultoria | Arquitetura de Negócios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              source: {
+                blue: '#3b82f6', // Electric Blue
+                dark: '#020617', // Deep Navy/Black
+                gray: '#0f172a'  // Slate 900
+              }
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              mono: ['"Space Grotesk"', 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #000000;
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+      .font-display {
+        font-family: 'Space Grotesk', sans-serif;
+      }
+      .neon-text {
+        color: #3b82f6;
+        text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+      }
+      .neon-border {
+        border-color: #3b82f6;
+        box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+      }
+      .glass-panel {
+        background: rgba(15, 23, 42, 0.3);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(59, 130, 246, 0.1);
+      }
+      
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #020617;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e3a8a;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #3b82f6;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react": "https://esm.sh/react@^19.2.4",
+        "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+        "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
